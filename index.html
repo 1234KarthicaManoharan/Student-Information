@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Student Mark Details Between 400 t0 550"
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",       
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   
+ 
+
+<h2>Table Format</h2>
+
+<table>
+  <tr><th>S.No</th>
+    <th>Student Name</th>
+    <th>Standard</th>
+    <th>Mark</th>
+  </tr>
+  <tr><td>0</td>
+    <td>Alfred</td>
+    <td>11-A</td>
+    <td>450</td>
+  </tr>
+  <tr>
+<td>1</td>
+    <td>Angel</td>
+    <td>11-A</td>
+    <td>414</td>
+  </tr>
+  <tr>
+<td>2</td>
+    <td>Akshay</td>
+    <td>11-A</td>
+    <td>520</td>
+  </tr>
+  <tr>
+<td>3</td>
+    <td>Bala</td>
+    <td>11-A</td>
+    <td>460</td>
+  </tr>
+  <tr>
+<td>4</td>
+    <td>Joseph</td>
+    <td>11-A</td>
+    <td>450</td>
+  </tr>
+<tr>
+<td>5</td>
+    <td>Frank</td>
+    <td>11-A</td>
+    <td>500</td>
+  </tr>
+  <tr>
+<td>6</td>
+    <td>Mark</td>
+    <td>11-A</td>
+    <td>480</td>
+  </tr>
+<tr>
+<td>7</td>
+    <td>Peter</td>
+    <td>11-A</td>
+    <td>480</td>
+  </tr>
+  <tr>
+<td>8</td>
+    <td>Rahul</td>
+    <td>11-A</td>
+    <td>410</td>
+  </tr>
+<tr>
+<td>9</td>
+    <td>Stephen</td>
+    <td>11-A</td>
+    <td>500</td>
+  </tr>
+  <tr>
+<td>10</td>
+    <td>George</td>
+    <td>11-A</td>
+    <td>480</td>
+  </tr>
+<tr>
+<td>11</td>
+    <td>Micheal</td>
+    <td>11-A</td>
+    <td>510</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
